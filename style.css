@@ -1,0 +1,153 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.header{
+    /* background:yellow;  */
+    position:fixed;
+    width:100%;
+    height:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:150px;
+    text-align:center;
+    word-wrap: break-word;
+    line-height:100px;
+    color:rgb(21, 255, 0);
+    z-index:10;
+    filter:blur(5px);
+}
+
+.header:hover{
+    color:blue;
+    filter:drop-shadow(1);
+    filter:blur(10px);
+
+}
+.main{
+    /* background:blue;   */
+    position:relative;
+    width:80%;
+    height:1000vh;
+    top: 0px;
+    left: 0px;
+}
+.synth{
+    position:fixed;
+    width:20%;
+    height:20px;
+    top:50%;
+    left:25%;
+    z-index:10px;
+}
+.sidebar{
+    /* background:green;   */
+    padding:5px;
+    position:fixed;
+    width:20%;
+    height:1000vh;
+    top: 0px;
+    right: 0px;
+}
+
+p{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    word-spacing:50px;
+    letter-spacing:2px;
+    padding:30px;
+    transition:all 500ms;
+    color:black;
+
+}
+
+.neworder{
+    position:fixed;
+    width:100px;
+    height:100px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:1;
+}
+
+
+p:hover{
+    color:rgb(21, 255, 0);
+    /* text-decoration:line-through; */
+    /* background:pink; */
+    /* opacity:0.8; */
+}
+
+/* a:link {
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  .hide{
+    opacity:0;
+} */
+
+.images{
+    /* background:yellow;  */
+    position:fixed;
+}
+
+images:hover{
+    opacity:1;
+    top:0px;
+    left:0px;
+    border:50px dotted white;
+} 
+/* 
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    top:0;
+    left:0;
+    background:black;
+    color:white;
+    padding:20px;
+    border-radius:20px;
+    z-index:10;
+} */
+
+.modal{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-size:20px;
+    position:absolute;
+    width:200px;
+    height:200px;
+    background:grey;
+    padding:20px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:20px;
+    z-index:10;
+    display:none;
+}
+
+.manual{
+    position:absolute;
+    width:10%; 
+    top: 10%;
+    left:10%;
+    opacity:1;
+    transition:all 500ms;
+    z-index: 10;
+    border-radius: 20px;
+    pointer-events:none;
+    color:blue;
+}
+
+.show{
+    display:block;
+}
